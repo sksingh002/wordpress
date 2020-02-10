@@ -21,10 +21,6 @@ pkg_exports=(
    [local_only]=http.listen.local_only
 )
 
-pkg_binds=(
-  [database]="host port username password database"
-  [php]="port database"
-)
 
 do_build() {
   return 0
